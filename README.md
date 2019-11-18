@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<h3 align="center">Are predicitions made using Google Trends data better than gambling?</h3>
+<h2 align="center">Are predicitions based on Google Trends data better than gambling?</h2>
 
 <p align="center">
   A brief introductory analysis if Google Trends data can be used to have a look in the future - by trying to predict the stock price of the german stock index DAX. 
