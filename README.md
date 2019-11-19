@@ -12,7 +12,7 @@
   <a href="https://github.com/jo-ai-chim/Project_Google_Trends_Prediction"><strong>Explore the code »</strong></a>
 </p>
 
-Spoiler alert: Yes they are!
+**Spoiler alert: Yes they are!**
 
 After I discovered Google Trends I directly wondered myself if the data can be used for more than just some party games. So I set up a small project trying to get an answer to this question. After reading this article I hope you agree that there is a big potential in using the google trends data and that you can't stop of thinking about potential use cases.
 
@@ -20,13 +20,13 @@ For my analysis I picked the share price of the german stock index DAX. Since "m
 
 Before making a prediction I tried to answer the question
 
-# How far in the future it might even be possible to make predictions for?
+**How far in the future it might even be possible to make predictions for?**
 
 To get an answer I checked the correlation between the search terms I picked for making the prediction and the share price of the DAX in the next 30 days.
 
 <p align="center">
   <a href="https://github.com/jo-ai-chim/Google_Trends_Predictions">
-    <img src="./Pics/correlation.png" alt="Predicition logo" width="816" height="544">
+    <img src="./Pics/correlation.png" alt="Correlation analysis I" width="408" height="272">
   </a>
 </p>
 
@@ -34,12 +34,12 @@ As you can see from the graph above the result was quite stunning. (At least for
 
 <p align="center">
   <a href="https://github.com/jo-ai-chim/Google_Trends_Predictions">
-    <img src="./Pics/correlation_final.png" alt="Predicition logo" width="1632" height="1632">
+    <img src="./Pics/correlation_final.png" alt="Correlation analysis II" width="816" height="544">
   </a>
 </p>
 
 Since the correlation for some search terms I piced were quite big (as you can see from the picture above) I was quite optimistic when I tried to answer the second question
 
-# Is it possible to make a good prediction?
+**Is it possible to make a good prediction?**
 
 
