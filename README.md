@@ -42,4 +42,14 @@ Since the correlation for some search terms I piced were quite big (as you can s
 
 **Is it possible to make a good prediction?**
 
+For simplicity and since it is only about the question if it is possible to make a prediciton that makes sense let's use a simple linear regression model. After training it I checked the coefficient of determination (R squared). Based on my initial search terms I got an R squared of 0.5611 when testing the trained model. 
 
+Mh, this is not too good but still good enough to keep going. So since it is about google trends data the first question to answer when trying to improve the model is 
+
+**Does adding more search terms improve the prediction?*
+
+So I added 23 more search terms to my initial set of 17 search terms. And started all over again with training the model. The result was quite satisfying. I got an R squared of 0.8173 when testing the model (I also checked the R squared of the training set by the way to be sure I am not dealing with an case of overfitting).
+
+Having all the possible ways in mind to improve the model and the prediction (like adding other data sources to the input data to train the model, optimizing the selection of the used search terms, analyse different kind of models, etc.) I am convinced:
+
+**Based on google trends data good models can be set up to have a look in the future.**
