@@ -46,7 +46,7 @@ For simplicity and since it is only about the question if it is possible to make
 
 Mh, this is not too good but still good enough to keep going. So since it is about google trends data the first question to answer when trying to improve the model is 
 
-**Does adding more search terms improve the prediction?*
+**Does adding more search terms improve the prediction?**
 
 So I added 23 more search terms to my initial set of 17 search terms. And started all over again with training the model. The result was quite satisfying. I got an R squared of 0.8173 when testing the model (I also checked the R squared of the training set by the way to be sure I am not dealing with an case of overfitting).
 
