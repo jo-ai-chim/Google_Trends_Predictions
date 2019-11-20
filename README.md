@@ -64,6 +64,6 @@ So as the graph shows the difference between the prediction and the actual value
   </a>
 </p>
 
-But having all the possible ways in mind to improve the model and the prediction (analyse different kind of models, like adding other data sources to the input data to train the model, optimizing the selection of the used search terms, etc.) the good R squared convinced me that:
+But having all the possible ways in mind to improve the model and the prediction (like analyse different kind of models, adding other data sources to the input data to train the model, optimizing the selection of the used search terms, etc.) the good R squared convinced me that:
 
 **Google trends data is a valuable input to set up good models to have a look in the future.**
