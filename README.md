@@ -12,7 +12,7 @@
   <a href="https://github.com/jo-ai-chim/Project_Google_Trends_Prediction"><strong>Explore the code »</strong></a>
 </p>
 
-**Spoiler alert: Yes they are!**
+**Spoiler alert: Maybe!**
 
 After I discovered Google Trends I directly wondered myself if the data can be used for more than just some party games. So I set up a small project trying to get an answer to this question. After reading this article I hope you agree that there is a big potential in using the google trends data and that you can't stop of thinking about potential use cases.
 
@@ -44,12 +44,26 @@ Since the correlation for some search terms I piced were quite big (as you can s
 
 For simplicity and since it is only about the question if it is possible to make a prediciton that makes sense let's use a simple linear regression model. After training it I checked the coefficient of determination (R squared). Based on my initial search terms I got an R squared of 0.5611 when testing the trained model. 
 
-Mh, this is not too good but still good enough to keep going. So since it is about google trends data the first question to answer when trying to improve the model is 
+Mh, this is not good enough to answer the question yet but good enough to keep going. So since it is about google trends data the first question to answer when trying to improve the model is 
 
-**Does adding more search terms improve the prediction?**
+**Does adding more search terms improve the model?**
 
-So I added 23 more search terms to my initial set of 17 search terms. And started all over again with training the model. The result was quite satisfying. I got an R squared of 0.8173 when testing the model (I also checked the R squared of the training set by the way to be sure I am not dealing with an case of overfitting).
+So I added 23 more search terms to my initial set of 17 search terms. And started all over again with training the model. The result was quite promising. I got an R squared of 0.8173 when testing the model (I also checked the R squared of the training set by the way to be sure I am not dealing with an case of overfitting). Unfortunatelly having a more detailed look at the R squared showed that the model is not good enough for real live, yet:
 
-Having all the possible ways in mind to improve the model and the prediction (like adding other data sources to the input data to train the model, optimizing the selection of the used search terms, analyse different kind of models, etc.) I am convinced:
+<p align="center">
+  <a href="https://github.com/jo-ai-chim/Google_Trends_Predictions">
+    <img src="./Pics/r-squared.png" alt="R squared" width="408" height="272">
+  </a>
+</p>
 
-**Based on google trends data good models can be set up to have a look in the future.**
+So as the graph shows the difference between the prediction and the actual values is quite big. Making a first prediction and plotting it together with the standard deviation shows this also quite clear:
+
+<p align="center">
+  <a href="https://github.com/jo-ai-chim/Google_Trends_Predictions">
+    <img src="./Pics/share_price_and_pred.png" alt="Predicition Print" width="408" height="272">
+  </a>
+</p>
+
+But having all the possible ways in mind to improve the model and the prediction (analyse different kind of models, like adding other data sources to the input data to train the model, optimizing the selection of the used search terms, etc.) the good R squared convinced me that:
+
+**Google trends data is a valuable input to set up good models to have a look in the future.**
