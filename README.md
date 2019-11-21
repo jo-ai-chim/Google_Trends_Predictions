@@ -12,15 +12,15 @@
   <a href="https://github.com/jo-ai-chim/Project_Google_Trends_Prediction"><strong>Explore the code »</strong></a>
 </p>
 
-**Spoiler alert: Maybe!**
+**Spoiler alert: Yes they might!**
 
 After I discovered Google Trends I directly wondered myself if the data can be used for more than just some party games. So I set up a small project trying to get an answer to this question. After reading this article I hope you agree that there is a big potential in using the google trends data and that you can't stop of thinking about potential use cases.
 
-For my analysis I picked the share price of the german stock index DAX. Since "money makes the world go round" I thought this might nbe a good pick. Moreover the data can be easily accessed via [yahoo-finance](https://de.finance.yahoo.com/).
+For my analysis I picked the share price of the german stock index DAX. Since "money makes the world go round" I thought this might be a good pick. Moreover the data can be easily accessed via [yahoo-finance](https://de.finance.yahoo.com/).
 
 Before making a prediction I tried to answer the question
 
-**How far in the future it might even be possible to make predictions for?**
+**For which day in the future the chances are best to make a good prediction based on google trends data?**
 
 To get an answer I checked the correlation between the search terms I picked for making the prediction and the share price of the DAX in the next 30 days.
 
@@ -44,11 +44,11 @@ Since the correlation for some search terms I piced were quite big (as you can s
 
 For simplicity and since it is only about the question if it is possible to make a prediciton that makes sense let's use a simple linear regression model. After training it I checked the coefficient of determination (R squared). Based on my initial search terms I got an R squared of 0.5611 when testing the trained model. 
 
-Mh, this is not good enough to answer the question yet but good enough to keep going. So since it is about google trends data the first question to answer when trying to improve the model is 
+Mh, this is not good enough to answer the question yet but good enough to keep going. So since it is about google trends data the first question when trying to improve the model is 
 
 **Does adding more search terms improve the model?**
 
-So I added 23 more search terms to my initial set of 17 search terms. And started all over again with training the model. The result was quite promising. I got an R squared of 0.8173 when testing the model (I also checked the R squared of the training set by the way to be sure I am not dealing with an case of overfitting). Unfortunatelly having a more detailed look at the R squared showed that the model is not good enough for real live, yet:
+So I added 23 more search terms to my initial set of 17 search terms. And started all over again with training the model. The result was quite promising. I got an R squared of 0.8173 when testing the model (I also checked the R squared of the training set by the way to be sure I am not dealing with an case of overfitting). Having a more detailed look at the R squared showed that the model is unfortunatelly not good enough for real live yet:
 
 <p align="center">
   <a href="https://github.com/jo-ai-chim/Google_Trends_Predictions">
