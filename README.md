@@ -38,17 +38,19 @@ As you can see from the graph above the result was quite stunning. (At least for
   </a>
 </p>
 
-Since the correlation for some search terms I piced were quite big (as you can see from the picture above) I was quite optimistic when I tried to answer the second question
+Since the correlation for some search terms I picked were quite big (as you can see from the picture above) I was quite optimistic when I tried to answer the second question
 
 **Is it possible to make a good prediction?**
 
-For simplicity and since it is only about the question if it is possible to make a prediciton that makes sense let's use a simple linear regression model. After training it I checked the coefficient of determination (R squared). Based on my initial search terms I got an R squared of 0.5611 when testing the trained model. 
+For simplicity and since it is only about the question if it is possible to make a prediciton that makes sense, I picked the easiest model I could think of. After setting it up I checked the coefficient of determination (R squared). Based on my initial search terms I got an R squared of 0.5611 when comparing my first "predicitions" to the actual values. 
 
-Mh, this is not good enough to answer the question yet but good enough to keep going. So since it is about google trends data the first question when trying to improve the model is 
+Mh, this was not good enough to answer the question yet but good enough to keep going. So since it is about google trends data the first question when trying to improve the model is 
 
 **Does adding more search terms improve the model?**
 
-So I added 23 more search terms to my initial set of 17 search terms. And started all over again with training the model. The result was quite promising. I got an R squared of 0.8173 when testing the model (I also checked the R squared of the training set by the way to be sure I am not dealing with an case of overfitting). Having a more detailed look at the R squared showed that the model is unfortunatelly not good enough for real live yet:
+I added 23 more search terms to my initial set of 17 search terms. And started all over again with training the model. The result was quite promising. I got an R squared of 0.8173 this time. 
+
+Having a more detailed look at the R squared showed that the model is unfortunatelly not good enough for real live yet:
 
 <p align="center">
   <a href="https://github.com/jo-ai-chim/Google_Trends_Predictions">
@@ -64,6 +66,6 @@ So as the graph shows the difference between the prediction and the actual value
   </a>
 </p>
 
-But having all the possible ways in mind to improve the model and the prediction (like analyse different kind of models, adding other data sources to the input data to train the model, optimizing the selection of the used search terms, etc.) the good R squared convinced me that:
+But having all the possible ways in mind to improve the model and the prediction (like analyse different kind of models, adding other data sources to the input data to set up the model, optimizing the selection of the used search terms, etc.) the good R squared convinced me that:
 
 **Google trends data is a valuable input to set up good models to have a look in the future.**
